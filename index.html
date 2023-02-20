@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Demandas do Arcebispo</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<div class="container">
+	  <header>
+		<h1>Demandas do Arcebispo</h1>
+	  </header>
+	  <main>
+		<form id="add-task-form">
+		  <label for="task-name">Nome da demanda:</label>
+		  <input type="text" id="task-name" required>
+		  <label for="task-category">Categoria:</label>
+		  <input type="text" id="task-category" required>
+		  <label for="task-date">Data de vencimento:</label>
+		  <input type="date" id="task-date" required>
+		  <button type="submit">Adicionar tarefa</button>
+		</form>
+		
+		<div id="task-list">
+		  <h2>Tarefas:</h2>
+		  <ul id="tasks"></ul>
+		</div>
+	  </main>
+	</div>
+	<script src="script.js"></script>
+  </body>
+</html>
